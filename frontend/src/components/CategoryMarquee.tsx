@@ -1,4 +1,4 @@
-import type { ComponentType } from "react";
+import type { LucideIcon } from "lucide-react";
 import {
   Code2,
   LineChart,
@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import { SKILL_CATEGORIES } from "../lib/categories";
 
-const ICONS: Record<string, ComponentType<{ size?: number }>> = {
+const ICONS: Record<string, LucideIcon> = {
   Engineering: Code2,
   "Data & Analytics": LineChart,
   "Product & Design": Palette,
