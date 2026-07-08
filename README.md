@@ -1,5 +1,5 @@
 
-An AI-powered recruitment assistant that automates resume screening by comparing multiple resumes against a job description and generating an explainable candidate ranking.
+An AI-powered recruitment assistant that automates resume screening by comparing multiple resumes against a job description and generating an explainable candidate ranking .
 
 The system extracts key information from PDF and DOCX resumes, analyzes required skills, experience, education, projects, and keywords, and produces transparent scoring with detailed reasoning for every candidate.
 
