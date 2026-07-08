@@ -1,0 +1,28 @@
+Marcus Chen
+marcus.chen@email.com | (206) 555-0134
+
+SUMMARY
+Full-stack leaning frontend engineer, 5 years of experience, React and
+TypeScript specialist.
+
+EXPERIENCE
+Frontend Engineer, Riverbed Health
+2020 - Present
+Built patient-facing web application in React and TypeScript. Integrated
+with REST APIs for scheduling and billing. Used Git for version control
+and code review across a team of 8.
+
+Junior Developer, Anchor Digital Agency
+2019 - 2020
+Built marketing sites in HTML, CSS and JavaScript for small business
+clients.
+
+EDUCATION
+B.S. Computer Science, Washington State University, 2019
+
+PROJECTS
+Appointment Scheduler: React and TypeScript app with a small Node.js
+backend, deployed with Docker.
+
+SKILLS
+React, TypeScript, CSS, JavaScript, Git, REST APIs, Node.js, HTML

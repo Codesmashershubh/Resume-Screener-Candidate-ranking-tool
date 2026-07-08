@@ -1,0 +1,27 @@
+Senior Frontend Engineer
+
+We're a mid-size fintech company building tools for small business owners.
+We're looking for a Senior Frontend Engineer to help lead our web platform.
+
+About the role:
+You'll own significant parts of our customer-facing dashboard, mentor
+junior engineers, and work closely with design and product to ship
+features end to end.
+
+Requirements:
+- 4+ years of professional experience building production web applications
+- Strong proficiency in React, TypeScript, and CSS
+- Experience with REST APIs and Git-based workflows
+- Bachelor's degree in Computer Science or a related field (or equivalent
+  practical experience)
+- Comfortable working in an agile, fast-paced environment
+
+Nice to have:
+- Experience with GraphQL
+- Familiarity with Next.js
+- Docker / containerized deployments
+- Prior experience in fintech or another regulated industry
+
+What we offer:
+Competitive salary, equity, remote-friendly culture, and a team that cares
+about shipping thoughtful, well-tested software.

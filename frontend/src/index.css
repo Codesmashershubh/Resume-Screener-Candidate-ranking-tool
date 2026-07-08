@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-data: ui-monospace, "SF Mono", "Menlo", monospace;
+
+  --color-ink: #0a1b33;
+  --color-ink-strong: #0a152d;
+  --color-muted: #64748b;
+  --color-highlight: #eab308;
+  --color-highlight-soft: #fef9c3;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f9fafb;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: var(--color-highlight-soft);
+  color: var(--color-ink);
+}
+
+/* Visible focus ring everywhere, including for keyboard users - no
+   `outline-none` without a replacement anywhere in this app. */
+:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation: marquee-scroll 32s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translateY(0) rotate(var(--drift-rotate, 0deg));
+  }
+  50% {
+    transform: translateY(-10px) rotate(var(--drift-rotate, 0deg));
+  }
+}
+
+.animate-drift {
+  animation: drift 6s ease-in-out infinite;
+}

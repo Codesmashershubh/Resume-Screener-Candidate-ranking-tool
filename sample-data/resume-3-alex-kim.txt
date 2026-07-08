@@ -1,0 +1,23 @@
+Alex Kim
+alex.kim@email.com
+
+SUMMARY
+Junior developer with 1.5 years of experience, eager to grow into a
+frontend-focused role.
+
+EXPERIENCE
+Junior Software Developer, StartupX
+Jan 2023 - Present
+Built small internal tools using JavaScript and CSS. Fixed bugs in the
+main React codebase under senior engineer supervision. Used Git for
+version control.
+
+EDUCATION
+Associate Degree in Web Development, City Community College, 2022
+
+PROJECTS
+Portfolio Site: A personal site built with JavaScript and CSS to showcase
+past coursework.
+
+SKILLS
+JavaScript, CSS, Git, HTML

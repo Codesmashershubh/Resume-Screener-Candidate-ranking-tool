@@ -1,0 +1,16 @@
+# Deliberately minimal on purpose: no numpy / scikit-learn / torch /
+# sentence-transformers. The scoring engine (app/scoring/nlp_utils.py) is
+# pure-Python TF-IDF, so it needs none of them - which matters a lot on a
+# 512 MB / 0.1 CPU free-tier instance, and keeps `pip install` fast enough
+# to comfortably fit inside a free build-minute budget.
+#
+# Minimum-version (not exact) pins on purpose: exact pins go stale and can
+# make `pip install` fail outright if that precise patch is ever yanked.
+# These floors are all versions confirmed to exist; pip will resolve to
+# whatever the current compatible release is at install time.
+
+fastapi>=0.110.0
+uvicorn>=0.29.0
+python-multipart>=0.0.9
+pypdf>=4.0.0
+python-docx>=1.1.0

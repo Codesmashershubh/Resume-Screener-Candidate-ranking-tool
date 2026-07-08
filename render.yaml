@@ -1,0 +1,53 @@
+# Render Blueprint - deploys both services on the Free instance type.
+#
+# Usage: push this repo to GitHub, then in the Render Dashboard choose
+# New -> Blueprint and point it at the repo. Render will read this file
+# and provision both services below.
+#
+# IMPORTANT two-step note: on the very first sync, neither service's final
+# https://...onrender.com URL exists yet, so the two env vars below
+# (ALLOWED_ORIGINS and VITE_API_URL) are marked `sync: false`, meaning
+# Render prompts you for a value during setup rather than guessing. The
+# straightforward path:
+#   1. Sync this Blueprint once (both services will deploy, but won't be
+#      able to talk to each other yet).
+#   2. Copy each service's onrender.com URL from the Render Dashboard.
+#   3. Set ALLOWED_ORIGINS on resume-screener-api to the frontend's URL,
+#      and VITE_API_URL on resume-screener-frontend to the backend's URL.
+#   4. Manually trigger a redeploy of the frontend - VITE_API_URL is a
+#      Vite *build-time* variable, so it's baked into the static bundle;
+#      changing it doesn't take effect until the next build.
+# See README.md -> Deployment for the fully manual (non-Blueprint) walk-through.
+
+services:
+  - type: web
+    name: resume-screener-api
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.3"
+      - key: ALLOWED_ORIGINS
+        sync: false   # set to your frontend's URL, e.g. https://resume-screener-frontend.onrender.com
+      - key: ENABLE_HISTORY
+        value: "true"
+      - key: MAX_STORED_SESSIONS
+        value: "50"
+
+  - type: web
+    name: resume-screener-frontend
+    runtime: static
+    plan: free
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: VITE_API_URL
+        sync: false   # set to your backend's URL, e.g. https://resume-screener-api.onrender.com
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html

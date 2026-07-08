@@ -1,0 +1,30 @@
+Sam Osei
+sam.osei@email.com | (773) 555-0122
+
+SUMMARY
+Career changer moving into frontend engineering after a bootcamp,
+following five years in a non-technical role. Strong fundamentals in
+React and modern CSS.
+
+EXPERIENCE
+Frontend Developer (Contract), Freelance
+2023 - Present
+Delivered small React and TypeScript projects for local businesses,
+including a booking widget and a marketing site rebuild. Used Git for
+all projects.
+
+Operations Associate, Meridian Logistics
+2018 - 2022
+Coordinated shipping schedules and vendor communication (non-technical
+role, included for full work history).
+
+EDUCATION
+Full-Stack Web Development Certificate, Coding Bootcamp Co, 2023
+Bachelor of Arts in History, Ohio University, 2017
+
+PROJECTS
+Booking Widget: Embeddable React and TypeScript component using REST
+APIs, styled with CSS.
+
+SKILLS
+React, TypeScript, CSS, Git, REST APIs, JavaScript

@@ -1,0 +1,37 @@
+Priya Sharma
+priya.sharma@email.com | (312) 555-0198 | Chicago, IL
+
+PROFESSIONAL SUMMARY
+Frontend engineer with 6 years of experience building and scaling
+production web applications, with a focus on design systems and
+developer tooling.
+
+EXPERIENCE
+
+Senior Frontend Engineer, Northlight Financial
+Mar 2021 - Present
+- Led the rebuild of the customer dashboard in React and TypeScript,
+  cutting page load time by 40%
+- Built and maintain the company's component library, used by 5 product
+  teams
+- Mentor two junior engineers and run the frontend guild's weekly review
+
+Frontend Engineer, Bramble Software
+Jul 2018 - Feb 2021
+- Built REST API integrations for a B2B SaaS product using React and Git-
+  based CI/CD
+- Migrated legacy jQuery views to a modern React + CSS component system
+
+EDUCATION
+Bachelor of Science in Computer Science, University of Illinois, 2018
+
+PROJECTS
+Design System Toolkit: Built with React, TypeScript, and CSS. An internal
+component library with live documentation, adopted company-wide.
+
+Expense Tracker: A personal project using Next.js, GraphQL, and Docker
+for local development. Deployed as a portfolio piece.
+
+SKILLS
+React, TypeScript, JavaScript, CSS, Git, REST APIs, GraphQL, Next.js,
+Docker, Node.js
