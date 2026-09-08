@@ -46,3 +46,5 @@ Use Cases
     Recruitment Agencies
     Startup Hiring
     Internal Candidate Evaluation
+
+build by SHUBHAM SHUKLA
