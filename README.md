@@ -17,7 +17,7 @@ Features :
     FastAPI backend
     React + TypeScript frontend
     Responsive modern UI
-    Deployable on Render + Vercel
+   
 
 Tech Stack
 
